@@ -77,6 +77,9 @@ netstat -ano | findstr :5101
 taskkill /F /PID <NUMERO_DO_PID>
 ```
 
+#### 🧪 Executar Endpoints 
+- Importar Coleção de testes que contém na pasta Postman **Redis Gateway Cache Example.postman_collection.json**
+
 #### 🧪 Executar Redis
 Abra o terminal: Abra o Prompt de Comando (CMD) ou PowerShell no Windows.
 
