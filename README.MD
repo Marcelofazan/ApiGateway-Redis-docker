@@ -97,7 +97,7 @@ PS C:\Windows\system32> netstat -ano | findstr :4001
 #### 🧪 Executar Endpoints 
 - Importar Coleção de testes que contém na pasta Postman **Redis Gateway Cache Example.postman_collection.json**
 
-#### 🧪 Executar Redis
+#### Redis
 - Abra o terminal: Abra o Prompt de Comando (CMD) ou PowerShell no Windows.
 
 - Inicie o cliente: Digite o comando abaixo e pressione Enter:
