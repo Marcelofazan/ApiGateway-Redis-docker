@@ -1,5 +1,5 @@
 ## 🌐 Apigateway10-Redis-docker
-Exemplo de utilização de criação de ApiGateway com utilização de cache Redis.
+Exemplo de criação de ApiGateway com Redis como cache em C# ASP.NET Core 10 utilizando Arquitetura de Microserviços.
 
 | Tecnologia | Descrição |
 |-----------|-----------|
