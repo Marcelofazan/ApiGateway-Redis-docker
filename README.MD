@@ -96,7 +96,7 @@ PS C:\Windows\system32> netstat -ano | findstr :4001
 ```
 
 #### 🧪 Executar Endpoints 
-- Importar Coleção de testes que contém na pasta Postman 
+- Importar Coleção de testes que contém no diretório Postman 
 **Redis Gateway Cache Example.postman_collection.json**
 
 #### 🔍 Redis
