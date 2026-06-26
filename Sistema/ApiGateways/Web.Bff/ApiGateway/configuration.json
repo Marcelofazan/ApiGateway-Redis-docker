@@ -2,55 +2,59 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/{version}/agrupador",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "host.docker.internal",
-          "Port": 6000
+          "Host": "sistema.agrupador.api",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/agrupador-api/{version}/agrupador",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamHttpMethod": [ "POST" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
     {
       "DownstreamPathTemplate": "/api/{version}/agrupador/pessoa/{pessoaId}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "host.docker.internal",
-          "Port": 6000
+          "Host": "sistema.agrupador.api",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/agrupador-api/{version}/agrupador/pessoa/{pessoaId}",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
     {
       "DownstreamPathTemplate": "/api/{version}/produtos",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "host.docker.internal",
-          "Port": 4000
+          "Host": "sistema.produto.api",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/produto-api/{version}/produtos",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
     {
       "DownstreamPathTemplate": "/api/{version}/pessoas",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "host.docker.internal",
-          "Port": 3000
+          "Host": "sistema.pessoa.api",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/pessoa-api/{version}/pessoas",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
     {
       "DownstreamPathTemplate": "/api/{version}/{everthing}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "host.docker.internal",
@@ -58,7 +62,8 @@
         }
       ],
       "UpstreamPathTemplate": "/api/{version}/{everthing}",
-      "UpstreamHttpMethod": [ "GET", "Post" ]
+      "UpstreamHttpMethod": [ "GET", "Post" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     }
   ],
   "GlobalConfiguration": {
