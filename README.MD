@@ -85,8 +85,8 @@ Exibir somente Json de um hash armazenado em uma chave específica.
 HGET "Sistema_development_Pessoa_Agrupador_3673a9fd-191a-479c-a41f-3dc5611aa77d" data
 ```
 
-#### ⚙️ Configuração Gerar Certificado 
-Limpe os certificados existentes e Gere e confie em um novo certificado local
+#### ⚙️ Configuração Certificado TLS/SSL
+- Limpe os certificados existentes e Gere e confie em um novo certificado local
 ```bash
 dotnet dev-certs https --clean
 dotnet dev-certs https --trust
@@ -96,7 +96,6 @@ dotnet dev-certs https --trust
 mkdir %USERPROFILE%\.dotnet\corefx\cryptography\x509stores\mycerts
 dotnet dev-certs https --trust -ep %USERPROFILE%\.dotnet\corefx\cryptography\x509stores\mycerts\webApi.pfx -p pa55w0rd
 ```
-
 - Conferir se o certificado está na pasta 
 ```bash
 C:\Users\[SEU_USUARIO]\.dotnet\corefx\cryptography\x509stores\mycerts
