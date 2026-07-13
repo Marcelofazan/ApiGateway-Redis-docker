@@ -101,7 +101,7 @@ dotnet dev-certs https --trust -ep %USERPROFILE%\.dotnet\corefx\cryptography\x50
 C:\Users\[SEU_USUARIO]\.dotnet\corefx\cryptography\x509stores\mycerts
 ```
 
-#### ⚙️ - Configuração Conflito de portas Desenvolvimento Local 
+#### ⚙️ Configuração Desenvolvimento Local Conflito de Portas 
 
 - Caso haja falha de compilação por Portas ocupadas, rastrear portas no PowerShell e fecha-las.
 ```bash
@@ -114,10 +114,12 @@ netstat -ano | findstr :6001
 netstat -ano | findstr :5100 
 netstat -ano | findstr :5101
 ```
+
 - O comando vai retornar uma linha. O último número dessa linha é o PID. Use esse número para fechar o processo:
 ```bash
 taskkill /F /PID <NUMERO_DO_PID>
 ```
+
 - Exemplo de como as portas devem estar para funcionar 
 ```bash
 PS C:\Windows\system32> netstat -ano | findstr :4001
