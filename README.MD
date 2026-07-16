@@ -60,7 +60,7 @@ dotnet run
 - Importar Coleção de testes que contém no diretório Postman 
 **Redis Gateway Cache Example.postman_collection.json**
 
-#### 🛠️ Redis
+#### 🛠️ Comandos Redis
 - Abra o terminal: Abra o Prompt de Comando (CMD) ou PowerShell no Windows.
 
 - Inicie o cliente: Digite o comando abaixo e pressione Enter:
